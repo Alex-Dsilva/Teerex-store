@@ -1,0 +1,49 @@
+.card-comp {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+}
+
+.card-image-container {
+    position: relative;
+}
+
+.card-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+}
+
+.card-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.addtocart-btn {
+    padding: 0.8rem 1rem;
+    color: beige;
+    background-color: rgb(125, 11, 125);
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out;
+}
+
+.addtocart-btn:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.addtocart-btn:active {
+    transform: scale(0.9, 0.9);
+    box-shadow: none;
+}

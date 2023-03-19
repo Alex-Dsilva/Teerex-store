@@ -1,0 +1,107 @@
+.flex-box {
+  display: flex;
+  gap: 2rem;
+}
+
+#product-container {
+  width: 75vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+}
+
+#Search-Box-Flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+#Search-Box {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+#Search-Box input {
+  border: none;
+  border-bottom: 1px solid;
+  padding: 5px;
+  font-size: 16px;
+  width: 100%;
+  background-color: transparent;
+}
+
+#Search-Box button {
+  background-color: #cac4c4;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  width: 40px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+#filter-btn {
+  display: none;
+  background: none;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  align-items: center;
+}
+
+#filter-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+
+
+#loading-spinner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#spinner {
+  border: 2px solid #fff;
+  border-top-color: #ccc;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+@media only screen and (max-width: 767px) {
+  #product-container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+
+  .flex-box {
+    justify-content: center;
+  }
+
+  #filter-btn {
+    display: inline;
+  }
+
+}
